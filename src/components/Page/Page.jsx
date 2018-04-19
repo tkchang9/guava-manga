@@ -1,12 +1,28 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import styled from 'styled-components';
 
+import colours from '../../common/colours';
+
+import Title from './Title';
 import MangaCard from './MangaCard';
-
 import preload from '../../../kitsu_trending.json';
 
+const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+const Wrapper = styled.div`
+  margin: auto;
+  position: relative;
+  max-width: 1600px;
+  background: ${colours.lgreen};
+`;
+
 // array prototype functions
-let resultD = preload.data.filter(manga => manga.attributes.averageRating > 80);
+// let resultD = preload.data.filter(manga => manga.attributes.averageRating > 80);
+let resultD = preload.data;
 
 class Page extends Component {
   render() {
@@ -22,25 +38,28 @@ class Page extends Component {
     // } = resultD.attributes;
     // const image = resultD.attributes.posterImage.large;
     return (
-      <div>
-        {/* <img src={image} alt={`Manga cover of ${canonicalTitle}`} />
+      <Wrapper>
+        <Title title="Top Trending Manga" />
+        <Container>
+          {/* <img src={image} alt={`Manga cover of ${canonicalTitle}`} />
         <h1>{canonicalTitle}</h1>
         <h2>{synopsis}</h2> */}
-        {resultD.map(manga => (
-          <MangaCard
-            key={manga.id}
-            imageUrl={manga.attributes.posterImage.large}
-            title={manga.attributes.canonicalTitle}
-            status={manga.attributes.status}
-            chapterCount={manga.attributes.chapterCount}
-            volumeCount={manga.attributes.volumeCount}
-            synopsis={manga.attributes.synopsis}
-          />
-        ))}
-        <pre>
+          {resultD.map(manga => (
+            <MangaCard
+              key={manga.id}
+              imageUrl={manga.attributes.posterImage.large}
+              title={manga.attributes.canonicalTitle}
+              status={manga.attributes.status}
+              chapterCount={manga.attributes.chapterCount}
+              volumeCount={manga.attributes.volumeCount}
+              synopsis={manga.attributes.synopsis}
+            />
+          ))}
+          {/* <pre>
           <code>{JSON.stringify(resultD, null, 4)}</code>
-        </pre>
-      </div>
+        </pre> */}
+        </Container>
+      </Wrapper>
     );
   }
 }

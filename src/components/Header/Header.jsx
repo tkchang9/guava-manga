@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import colours from '../../common/colours';
+
 // import HUserAuth from './HUserAuth';
 
 const Container = styled.div`
+  position: relative;
+  z-index: 99;
   display: flex;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
-  box-shadow: 0px 1px 10px grey;
-  margin-bottom: 10px;
+  box-shadow: 0px 4px 10px #6666;
+  // margin-bottom: 10px;
   font-family: Ubuntu;
   font-size: 16px;
   color: #666666;
+  border-bottom: 4px solid ${colours.guava};
 `;
 const Item = styled.div`
   margin-right: 20px;
