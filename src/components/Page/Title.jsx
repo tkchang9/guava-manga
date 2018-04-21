@@ -6,12 +6,12 @@ import colours from '../../common/colours';
 const Wrapper = styled.div`
   font-family: IBM Plex Sans;
   font-size: 3rem;
+  color: ${colours.blue};
   text-align: center;
-  padding: 50px 20px 20px 20px;
+  padding: 30px 20px 40px 20px;
   margin-left: 5%;
   display: inline-block
   position: relative;
-  border-bottom: 4px solid ${colours.green};
   line-height: 60%;
 `;
 

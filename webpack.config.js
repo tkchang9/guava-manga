@@ -27,11 +27,12 @@ module.exports = {
 
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
+    path: path.resolve(__dirname, 'dist')
+    // publicPath: '/'
   },
   devServer: {
-    contentBase: './dist'
+    historyApiFallback: true,
+    contentBase: 'dist'
   },
   module: {
     rules: [
@@ -46,7 +47,6 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-
         use: ExtractTextPlugin.extract({
           use: [
             {
@@ -64,6 +64,16 @@ module.exports = {
           ],
           fallback: 'style-loader'
         })
+      },
+      {
+        test: /\.(png|jpg|svg)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 25000,
+            name: './img/[name].[ext]'
+          }
+        }
       }
     ]
   },

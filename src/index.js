@@ -1,16 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Page from './components/Page/Page';
+import preload from '../kitsu_trending.json';
+
+import Browse from './components/Page/Browse';
+import Details from './components/Page/Details';
+import { isUndefined } from 'util';
+
+const Missing = () => <h1>404</h1>;
 
 const App = () => (
-  <React.Fragment>
-    <Header />
-    <Page />
-    <Footer />
-  </React.Fragment>
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={Browse} />
+      <Route
+        path="/details/:id"
+        component={props => {
+          const selectedManga = preload.data.find(data => props.match.params.id === data.id);
+          if (selectedManga === undefined) {
+            return <Missing />;
+          } else return <Details manga={selectedManga} />;
+        }}
+      />
+      <Route component={Missing} />
+    </Switch>
+  </BrowserRouter>
 );
 
 ReactDOM.render(<App />, document.getElementById('app'));

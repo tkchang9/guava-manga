@@ -3,22 +3,27 @@ import styled from 'styled-components';
 
 import colours from '../../common/colours';
 
+import guava from '../../common/img/guava/guava.svg';
+
 // import HUserAuth from './HUserAuth';
 
 const Container = styled.div`
   position: relative;
   z-index: 99;
   display: flex;
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
-  box-shadow: 0px 4px 10px #6666;
-  // margin-bottom: 10px;
+  padding: 0.5rem;
   font-family: Ubuntu;
   font-size: 16px;
   color: #666666;
-  border-bottom: 4px solid ${colours.guava};
+  border-bottom: 6px solid ${colours.guava};
+  align-items: center;
 `;
 const Item = styled.div`
   margin-right: 20px;
+`;
+const Image = styled.embed`
+  height: 25px;
+  margin-right: 5px;
 `;
 
 const HUserAuth = props => {
@@ -47,13 +52,11 @@ class Header extends Component {
   render() {
     return (
       <Container id="hContainer">
-        <div id="hIcon" />
+        <Image src="/img/guava.svg" id="hIcon" />
         <Item id="hTitle">Guava</Item>
         <Item id="hBrowse">Browse</Item>
         <Item id="hSearch">
-          <form>
-            <input placeholder="Search" />
-          </form>
+          <input placeholder="Search" />
         </Item>
         <HUserAuth signedIn={false} userName="UserName" />
       </Container>

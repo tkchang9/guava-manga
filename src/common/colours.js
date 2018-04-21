@@ -1,10 +1,9 @@
 const colours = {
-  guava: '#EE5549',
-  green: '#5F710A',
-  lgreen: '#f4f7e7',
-  brown: '#4C4500',
-  aqua: '#5ACABA',
-  lblue: '#CCF9F9'
+  green: '#B8B13C',
+  guava: '#F87E61',
+  blue: '#5D9491',
+  beige: '#F6C087',
+  dark: '#0E2628'
 };
 
 export default colours;

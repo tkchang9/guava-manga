@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   max-width: 700px;
   box-sizing: border-box;
   box-shadow: 1px 1px 10px #666;
+  background: #fff;
   border-radius: 4px;
   margin: 10px;
   padding: 10px;
@@ -30,9 +31,6 @@ class MangaCard extends Component {
         <div>
           <h1>{this.props.title}</h1>
           <div>
-            {/* <div>{this.props.status}</div>
-            <div>{this.props.chapterCount}</div>
-            <div>{this.props.volumeCount}</div> */}
             <p>{this.props.synopsis}</p>
           </div>
         </div>

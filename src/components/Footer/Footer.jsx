@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 class Footer extends Component {
   render() {
-    return <div>Footer</div>;
+    return <div>&#9400; 2018 Guava</div>;
   }
 }
 
