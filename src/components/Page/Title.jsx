@@ -1,7 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+// @flow
 
-import colours from '../../common/colours';
+import React from "react";
+import styled from "styled-components";
+
+import colours from "../../common/colours";
 
 const Wrapper = styled.div`
   font-family: IBM Plex Sans;
@@ -15,7 +17,7 @@ const Wrapper = styled.div`
   line-height: 60%;
 `;
 
-const Title = props => {
+const Title = (props: { title: string }) => {
   return <Wrapper>{props.title}</Wrapper>;
 };
 

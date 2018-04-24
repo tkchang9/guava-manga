@@ -11,7 +11,7 @@ module.exports = {
     },
     sourceType: "module"
   },
-  plugins: ["react"],
+  plugins: ["react", "flowtype"],
   rules: {
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "single"],

@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+// @flow
+
+import React, { Component } from "react";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   width: 48%;
@@ -23,7 +25,17 @@ const Image = styled.img`
   // border: 1px solid #666;
   box-shadow: 1px 1px 5px #666;
 `;
-class MangaCard extends Component {
+
+type Props = {
+  title: string,
+  imageUrl: string,
+  status: string,
+  synopsis: string,
+  chapterCount: number,
+  volumeCount: number
+};
+
+class MangaCard extends Component<Props> {
   render() {
     return (
       <Wrapper>

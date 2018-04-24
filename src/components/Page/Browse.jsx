@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+// @flow
 
-import colours from '../../common/colours';
+import * as React from "react";
+import { Component } from "react";
 
-import Title from './Title';
-import MangaCard from './MangaCard';
-import preload from '../../../kitsu_trending.json';
+import styled from "styled-components";
 
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import colours from "../../common/colours";
+
+import Title from "./Title";
+import MangaCard from "./MangaCard";
+import preload from "../../../kitsu_trending.json";
+
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const Container = styled.div`
   display: flex;
@@ -26,7 +30,7 @@ const Wrapper = styled.div`
 // let resultD = preload.data.filter(manga => manga.attributes.averageRating > 80);
 let resultD = preload.data;
 
-class Page extends Component {
+class Browse extends Component<null> {
   render() {
     // const id = resultD;
     // const link = resultD.links.self;
@@ -70,4 +74,4 @@ class Page extends Component {
   }
 }
 
-export default Page;
+export default Browse;

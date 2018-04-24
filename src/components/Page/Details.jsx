@@ -1,7 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+// @flow
 
-import Header from '../Header/Header';
+import * as React from "react";
+import styled from "styled-components";
+
+import Header from "../Header/Header";
 
 const Container = styled.div`
   display: grid;
@@ -16,7 +18,26 @@ const Title = styled.div`
 const Feature = styled.div``;
 const Item = styled.div``;
 
-const Details = props => {
+type Props = {
+  manga: {
+    attributes: {
+      synopsis: string,
+      canonicalTitle: string,
+      averageRating: string,
+      ratingRank: number,
+      popularityRank: number,
+      posterImage: {
+        tiny: string,
+        small: string,
+        medium: string,
+        large: string,
+        original: string
+      }
+    }
+  }
+};
+
+const Details = (props: Props) => {
   const mAttr = props.manga.attributes;
   return (
     <React.Fragment>
