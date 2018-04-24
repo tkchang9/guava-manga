@@ -1,7 +1,6 @@
 // @flow
 
 import * as React from "react";
-import { Component } from "react";
 
 import styled from "styled-components";
 
@@ -30,7 +29,7 @@ const Wrapper = styled.div`
 // let resultD = preload.data.filter(manga => manga.attributes.averageRating > 80);
 let resultD = preload.data;
 
-class Browse extends Component<null> {
+class Browse extends React.Component<null> {
   render() {
     // const id = resultD;
     // const link = resultD.links.self;

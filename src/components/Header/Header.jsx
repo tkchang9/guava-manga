@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+// @flow
 
-import colours from '../../common/colours';
+import * as React from "react";
+import styled from "styled-components";
 
-import guava from '../../common/img/guava/guava.svg';
+import colours from "../../common/colours";
+
+import guava from "../../common/img/guava/guava.svg";
 
 // import HUserAuth from './HUserAuth';
 
@@ -26,15 +28,13 @@ const Image = styled.embed`
   margin-right: 5px;
 `;
 
-const HUserAuth = props => {
+const HUserAuth = (props: { signedIn: boolean, userName: string }) => {
   let checkSignIn;
   if (props.signedIn) {
     checkSignIn = (
       <React.Fragment>
         <Item>My List</Item>
-        <Item className={props.className} id="hAuth">
-          {props.userName}
-        </Item>
+        <Item id="hAuth">{props.userName}</Item>
       </React.Fragment>
     );
   } else {
@@ -48,7 +48,12 @@ const HUserAuth = props => {
   return checkSignIn;
 };
 
-class Header extends Component {
+// TODO:
+// type Props = {
+//
+// };
+
+class Header extends React.Component<{}> {
   render() {
     return (
       <Container id="hContainer">

@@ -1,6 +1,14 @@
-import React from 'react';
+// @flow
 
-const HUserAuth = props => {
+import * as React from "react";
+
+type Props = {
+  signedIn: boolean,
+  userName: string,
+  className: string
+};
+
+const HUserAuth = (props: Props) => {
   let checkSignIn;
   if (props.signedIn) {
     checkSignIn = (

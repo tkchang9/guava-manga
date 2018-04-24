@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Component } from "react";
+import * as React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -35,7 +35,7 @@ type Props = {
   volumeCount: number
 };
 
-class MangaCard extends Component<Props> {
+class MangaCard extends React.Component<Props> {
   render() {
     return (
       <Wrapper>
