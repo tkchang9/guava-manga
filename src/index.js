@@ -1,12 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
-import preload from '../kitsu_trending.json';
-
-import Browse from './components/Page/Browse';
-import Details from './components/Page/Details';
-import { isUndefined } from 'util';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import preload from "../kitsu_trending.json";
+import Browse from "./components/Page/Browse";
+import Details from "./components/Page/Details";
 
 const Missing = () => <h1>404</h1>;
 
@@ -17,7 +14,9 @@ const App = () => (
       <Route
         path="/details/:id"
         component={props => {
-          const selectedManga = preload.data.find(data => props.match.params.id === data.id);
+          const selectedManga = preload.data.find(
+            data => props.match.params.id === data.id
+          );
           if (selectedManga === undefined) {
             return <Missing />;
           } else return <Details manga={selectedManga} />;
@@ -28,6 +27,6 @@ const App = () => (
   </BrowserRouter>
 );
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById("app"));
 
-console.log('JS started.');
+console.log("JS started.");
