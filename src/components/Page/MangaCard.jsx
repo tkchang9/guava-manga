@@ -29,26 +29,24 @@ const Image = styled.img`
 type Props = {
   title: string,
   imageUrl: string,
-  status: string,
-  synopsis: string,
-  chapterCount: number,
-  volumeCount: number
+  ageRatingGuide: string,
+  subtype: string,
+  popularityRank: number
 };
 
-class MangaCard extends React.Component<Props> {
-  render() {
-    return (
-      <Wrapper>
-        <Image src={this.props.imageUrl} />
+const MangaCard = (props: Props) => (
+  <Wrapper>
+    <Image src={props.imageUrl} />
+    <div>
+      <h1>{props.title}</h1>
+      <div>
+        <div>{props.popularityRank}</div>
         <div>
-          <h1>{this.props.title}</h1>
-          <div>
-            <p>{this.props.synopsis}</p>
-          </div>
+          {props.ageRatingGuide}: {props.subtype}
         </div>
-      </Wrapper>
-    );
-  }
-}
+      </div>
+    </div>
+  </Wrapper>
+);
 
 export default MangaCard;

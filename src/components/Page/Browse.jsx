@@ -27,50 +27,34 @@ const Wrapper = styled.div`
 
 // array prototype functions
 // let resultD = preload.data.filter(manga => manga.attributes.averageRating > 80);
-let resultD = preload.data;
+const resultD = preload.data;
 
-class Browse extends React.Component<null> {
-  render() {
-    // const id = resultD;
-    // const link = resultD.links.self;
-    // const {
-    //   canonicalTitle,
-    //   synopsis,
-    //   ageRatingGuide,
-    //   averageRating,
-    //   status,
-    //   userCount
-    // } = resultD.attributes;
-    // const image = resultD.attributes.posterImage.large;
-    return (
-      <React.Fragment>
-        <Header />
-        <Wrapper>
-          <Title title="Browse: Top trending" />
-          <Container>
-            {/* <img src={image} alt={`Manga cover of ${canonicalTitle}`} />
+const Browse = () => (
+  <React.Fragment>
+    <Header />
+    <Wrapper>
+      <Title title="Browse: Top trending" />
+      <Container>
+        {/* <img src={image} alt={`Manga cover of ${canonicalTitle}`} />
         <h1>{canonicalTitle}</h1>
         <h2>{synopsis}</h2> */}
-            {resultD.map(manga => (
-              <MangaCard
-                key={manga.id}
-                imageUrl={manga.attributes.posterImage.large}
-                title={manga.attributes.canonicalTitle}
-                status={manga.attributes.status}
-                chapterCount={manga.attributes.chapterCount}
-                volumeCount={manga.attributes.volumeCount}
-                synopsis={manga.attributes.synopsis}
-              />
-            ))}
-            {/* <pre>
+        {resultD.map(manga => (
+          <MangaCard
+            key={manga.id}
+            imageUrl={manga.attributes.posterImage.large}
+            title={manga.attributes.canonicalTitle}
+            ageRatingGuide={manga.attributes.ageRatingGuide}
+            subtype={manga.attributes.subtype}
+            popularityRank={manga.attributes.popularityRank}
+          />
+        ))}
+        {/* <pre>
           <code>{JSON.stringify(resultD, null, 4)}</code>
         </pre> */}
-          </Container>
-        </Wrapper>
-        <Footer />
-      </React.Fragment>
-    );
-  }
-}
+      </Container>
+    </Wrapper>
+    <Footer />
+  </React.Fragment>
+);
 
 export default Browse;

@@ -43,7 +43,10 @@ const Details = (props: Props) => {
     <React.Fragment>
       <Header />
       <Container>
-        <Cover src={mAttr.posterImage.original} alt={`Cover for ${mAttr.canonicalTitle}`} />
+        <Cover
+          src={mAttr.posterImage.original}
+          alt={`Cover for ${mAttr.canonicalTitle}`}
+        />
         <div>
           <Title>{mAttr.canonicalTitle}</Title>
           <div>
