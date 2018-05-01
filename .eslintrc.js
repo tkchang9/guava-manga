@@ -3,7 +3,11 @@ module.exports = {
     browser: true,
     es6: true
   },
-  extends: ["eslint:recommended", "plugin:react/recommended"],
+  extends: [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:flowtype/recommended"
+  ],
   parserOptions: {
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
@@ -14,7 +18,7 @@ module.exports = {
   plugins: ["react", "flowtype"],
   rules: {
     "linebreak-style": ["error", "unix"],
-    quotes: ["error", "single"],
+    quotes: ["error", "double"],
     semi: ["error", "always"]
   }
 };

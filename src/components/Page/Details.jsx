@@ -31,10 +31,10 @@ type Props = {
         small: string,
         medium: string,
         large: string,
-        original: string
-      }
-    }
-  }
+        original: string,
+      },
+    },
+  },
 };
 
 const Details = (props: Props) => {
@@ -43,16 +43,14 @@ const Details = (props: Props) => {
     <React.Fragment>
       <Header />
       <Container>
-        <Cover
-          src={mAttr.posterImage.original}
-          alt={`Cover for ${mAttr.canonicalTitle}`}
-        />
+        <Cover src={mAttr.posterImage.original} alt={`Cover for ${mAttr.canonicalTitle}`} />
         <div>
           <Title>{mAttr.canonicalTitle}</Title>
           <div>
             <Feature>Rating: {mAttr.averageRating}%</Feature>
             <Feature>Ranked #{mAttr.ratingRank}</Feature>
             <Feature>Popularity Rank: {mAttr.popularityRank}</Feature>
+            <br />
           </div>
           <Item>{mAttr.synopsis}</Item>
         </div>

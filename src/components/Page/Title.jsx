@@ -17,8 +17,6 @@ const Wrapper = styled.div`
   line-height: 60%;
 `;
 
-const Title = (props: { title: string }) => {
-  return <Wrapper>{props.title}</Wrapper>;
-};
+const Title = (props: { title: string }) => <Wrapper>{props.title}</Wrapper>;
 
 export default Title;

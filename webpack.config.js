@@ -1,5 +1,5 @@
-const webpack = require('webpack');
-const path = require('path');
+const webpack = require("webpack");
+const path = require("path");
 
 /*
  * We've enabled UglifyJSPlugin for you! This minifies your app
@@ -9,7 +9,7 @@ const path = require('path');
  *
  */
 
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 
 /*
  * We've enabled ExtractTextPlugin for you. This allows your app to
@@ -20,65 +20,65 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
  *
  */
 
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-  entry: './src/index',
+  entry: "./src/index",
 
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
     // publicPath: '/'
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: 'dist'
+    contentBase: "dist",
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
 
         options: {
-          presets: ['env', 'react']
-        }
+          presets: ["env", "react"],
+        },
       },
       {
         test: /\.(scss|css)$/,
         use: ExtractTextPlugin.extract({
           use: [
             {
-              loader: 'css-loader',
+              loader: "css-loader",
               options: {
-                sourceMap: true
-              }
+                sourceMap: true,
+              },
             },
             {
-              loader: 'sass-loader',
+              loader: "sass-loader",
               options: {
-                sourceMap: true
-              }
-            }
+                sourceMap: true,
+              },
+            },
           ],
-          fallback: 'style-loader'
-        })
+          fallback: "style-loader",
+        }),
       },
       {
         test: /\.(png|jpg|svg)$/,
         use: {
-          loader: 'url-loader',
+          loader: "url-loader",
           options: {
             limit: 25000,
-            name: './img/[name].[ext]'
-          }
-        }
-      }
-    ]
+            name: "./img/[name].[ext]",
+          },
+        },
+      },
+    ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ["*", ".js", ".jsx"],
   },
-  plugins: [new UglifyJSPlugin(), new ExtractTextPlugin('bundle.css')]
+  plugins: [new UglifyJSPlugin(), new ExtractTextPlugin("bundle.css")],
 };

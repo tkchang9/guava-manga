@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 import colours from "../../common/colours";
 
-import guava from "../../common/img/guava/guava.svg";
+import guava from "../../common/img/guava/guava.svg"; // eslint-disable-line
 
 // import HUserAuth from './HUserAuth';
 
@@ -53,20 +53,16 @@ const HUserAuth = (props: { signedIn: boolean, userName: string }) => {
 //
 // };
 
-class Header extends React.Component<{}> {
-  render() {
-    return (
-      <Container id="hContainer">
-        <Image src="/img/guava.svg" id="hIcon" />
-        <Item id="hTitle">Guava</Item>
-        <Item id="hBrowse">Browse</Item>
-        <Item id="hSearch">
-          <input placeholder="Search" />
-        </Item>
-        <HUserAuth signedIn={false} userName="UserName" />
-      </Container>
-    );
-  }
-}
+const Header = () => (
+  <Container id="hContainer">
+    <Image src="/img/guava.svg" id="hIcon" />
+    <Item id="hTitle">Guava</Item>
+    <Item id="hBrowse">Browse</Item>
+    <Item id="hSearch">
+      <input placeholder="Search" />
+    </Item>
+    <HUserAuth signedIn={false} userName="UserName" />
+  </Container>
+);
 
 export default Header;

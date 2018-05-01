@@ -1,0 +1,706 @@
+{
+  "request_hash": "f68e5a0c0034a1c4607c13626453feeb3b6b3bc4",
+  "request_cached": true,
+  "top": [
+    {
+      "mal_id": 13,
+      "rank": 1,
+      "url": "https://myanimelist.net/manga/13/One_Piece",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/55539.jpg?s=cbae46a209944af12f450b4e5ef0e6ff",
+      "title": "One Piece",
+      "type": "Manga",
+      "score": 9.02,
+      "members": 48925,
+      "publishing_start": "Jul 1997",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 2,
+      "rank": 2,
+      "url": "https://myanimelist.net/manga/2/Berserk",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/157931.jpg?s=d26f8d9f883999147ce30092309a73fd",
+      "title": "Berserk",
+      "type": "Manga",
+      "score": 9.31,
+      "members": 41405,
+      "publishing_start": "Aug 1989",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 11,
+      "rank": 3,
+      "url": "https://myanimelist.net/manga/11/Naruto",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/117681.jpg?s=8ad0fba085e9d802e9904ce93ac2e6e6",
+      "title": "Naruto",
+      "type": "Manga",
+      "score": 8.11,
+      "members": 39786,
+      "publishing_start": "Sep 1999",
+      "publishing_end": "Nov 2014",
+      "volumes": 72
+    },
+    {
+      "mal_id": 23390,
+      "rank": 4,
+      "url": "https://myanimelist.net/manga/23390/Shingeki_no_Kyojin",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/37846.jpg?s=8e0a806fb4e28ccfd7273c27773f266c",
+      "title": "Shingeki no Kyojin",
+      "type": "Manga",
+      "score": 8.51,
+      "members": 25743,
+      "publishing_start": "Sep 2009",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 12,
+      "rank": 5,
+      "url": "https://myanimelist.net/manga/12/Bleach",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/180089.jpg?s=f8f50186e8ac9177cceeeceb18ea1106",
+      "title": "Bleach",
+      "type": "Manga",
+      "score": 7.72,
+      "members": 25475,
+      "publishing_start": "Aug 2001",
+      "publishing_end": "Aug 2016",
+      "volumes": 74
+    },
+    {
+      "mal_id": 21,
+      "rank": 6,
+      "url": "https://myanimelist.net/manga/21/Death_Note",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/54453.jpg?s=7630c51872def009ba38c8076c466bc5",
+      "title": "Death Note",
+      "type": "Manga",
+      "score": 8.76,
+      "members": 23919,
+      "publishing_start": "Dec 2003",
+      "publishing_end": "May 2006",
+      "volumes": 12
+    },
+    {
+      "mal_id": 598,
+      "rank": 7,
+      "url": "https://myanimelist.net/manga/598/Fairy_Tail",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/198604.jpg?s=99842391527f97cc938c4ea37f64b749",
+      "title": "Fairy Tail",
+      "type": "Manga",
+      "score": 7.88,
+      "members": 22318,
+      "publishing_start": "Aug 2006",
+      "publishing_end": "Jul 2017",
+      "volumes": 63
+    },
+    {
+      "mal_id": 33327,
+      "rank": 8,
+      "url": "https://myanimelist.net/manga/33327/Tokyo_Ghoul",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/114037.jpg?s=3855593142105acaa9790ed447cbb3de",
+      "title": "Tokyo Ghoul",
+      "type": "Manga",
+      "score": 8.64,
+      "members": 22229,
+      "publishing_start": "Sep 2011",
+      "publishing_end": "Sep 2014",
+      "volumes": 14
+    },
+    {
+      "mal_id": 25,
+      "rank": 9,
+      "url": "https://myanimelist.net/manga/25/Fullmetal_Alchemist",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/27600.jpg?s=a3bcd3ba1b978dee7c1dfaa192198282",
+      "title": "Fullmetal Alchemist",
+      "type": "Manga",
+      "score": 9.13,
+      "members": 22151,
+      "publishing_start": "Jul 2001",
+      "publishing_end": "Sep 2010",
+      "volumes": 27
+    },
+    {
+      "mal_id": 4632,
+      "rank": 10,
+      "url": "https://myanimelist.net/manga/4632/Oyasumi_Punpun",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/164420.jpg?s=02a7a495ed70048dfa778d75b97d8b29",
+      "title": "Oyasumi Punpun",
+      "type": "Manga",
+      "score": 9.04,
+      "members": 16142,
+      "publishing_start": "Mar 2007",
+      "publishing_end": "Nov 2013",
+      "volumes": 13
+    },
+    {
+      "mal_id": 44347,
+      "rank": 11,
+      "url": "https://myanimelist.net/manga/44347/One_Punch-Man",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/80661.jpg?s=27da7668c6e27f3843978dbbac656922",
+      "title": "One Punch-Man",
+      "type": "Manga",
+      "score": 8.8,
+      "members": 15535,
+      "publishing_start": "Jun 2012",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 75989,
+      "rank": 12,
+      "url": "https://myanimelist.net/manga/75989/Boku_no_Hero_Academia",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/141381.jpg?s=91e9721888a7813e92c2f6e819f348fc",
+      "title": "Boku no Hero Academia",
+      "type": "Manga",
+      "score": 8.58,
+      "members": 14275,
+      "publishing_start": "Jul 2014",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 3866,
+      "rank": 13,
+      "url": "https://myanimelist.net/manga/3866/Kuroshitsuji",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/28128.jpg?s=c23d90f97006cc4620411fb539084557",
+      "title": "Kuroshitsuji",
+      "type": "Manga",
+      "score": 8.54,
+      "members": 13509,
+      "publishing_start": "Sep 2006",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 56805,
+      "rank": 14,
+      "url": "https://myanimelist.net/manga/56805/Koe_no_Katachi",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/120529.jpg?s=b43000534ff5c5f8fe2a736d109a186f",
+      "title": "Koe no Katachi",
+      "type": "Manga",
+      "score": 8.83,
+      "members": 13396,
+      "publishing_start": "Aug 2013",
+      "publishing_end": "Nov 2014",
+      "volumes": 7
+    },
+    {
+      "mal_id": 3031,
+      "rank": 15,
+      "url": "https://myanimelist.net/manga/3031/Pandora_Hearts",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/5/185498.jpg?s=3ec83d925fa2ef82358961440386305f",
+      "title": "Pandora Hearts",
+      "type": "Manga",
+      "score": 8.65,
+      "members": 12246,
+      "publishing_start": "May 2006",
+      "publishing_end": "Mar 2015",
+      "volumes": 24
+    },
+    {
+      "mal_id": 564,
+      "rank": 16,
+      "url": "https://myanimelist.net/manga/564/Gantz",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/4/157936.jpg?s=6c161d55bc85586700117daffdb4419a",
+      "title": "Gantz",
+      "type": "Manga",
+      "score": 8.22,
+      "members": 11748,
+      "publishing_start": "Jul 2000",
+      "publishing_end": "Jun 2013",
+      "volumes": 37
+    },
+    {
+      "mal_id": 81117,
+      "rank": 17,
+      "url": "https://myanimelist.net/manga/81117/Tokyo_Ghoul_re",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/145997.jpg?s=d61c0114bfce2684df50e65eda582aea",
+      "title": "Tokyo Ghoul:re",
+      "type": "Manga",
+      "score": 8.52,
+      "members": 11616,
+      "publishing_start": "Oct 2014",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 42451,
+      "rank": 18,
+      "url": "https://myanimelist.net/manga/42451/Horimiya",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/162128.jpg?s=e93a8b965d150999aa1e53864474f791",
+      "title": "Horimiya",
+      "type": "Manga",
+      "score": 8.59,
+      "members": 11379,
+      "publishing_start": "Oct 2011",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 26,
+      "rank": 19,
+      "url": "https://myanimelist.net/manga/26/Hunter_x_Hunter",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/192445.jpg?s=bcd8f33ac01362f33921a5c35ba84544",
+      "title": "Hunter x Hunter",
+      "type": "Manga",
+      "score": 8.69,
+      "members": 11307,
+      "publishing_start": "Mar 1998",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 45757,
+      "rank": 20,
+      "url": "https://myanimelist.net/manga/45757/Shokugeki_no_Souma",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/115803.jpg?s=2d64c2547eacac027de6e4b4ea48ad28",
+      "title": "Shokugeki no Souma",
+      "type": "Manga",
+      "score": 8.57,
+      "members": 11229,
+      "publishing_start": "Nov 2012",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 102,
+      "rank": 21,
+      "url": "https://myanimelist.net/manga/102/Fruits_Basket",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/26105.jpg?s=6f6ceb3a059c7a9e8959605d2de6c802",
+      "title": "Fruits Basket",
+      "type": "Manga",
+      "score": 8.49,
+      "members": 11034,
+      "publishing_start": "Jul 1998",
+      "publishing_end": "Nov 2006",
+      "volumes": 23
+    },
+    {
+      "mal_id": 24,
+      "rank": 22,
+      "url": "https://myanimelist.net/manga/24/DGray-man",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/28084.jpg?s=e5c3b3ec01d8ba3eebdd98c5612a86f4",
+      "title": "D.Gray-man",
+      "type": "Manga",
+      "score": 8.34,
+      "members": 10691,
+      "publishing_start": "May 2004",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 104,
+      "rank": 23,
+      "url": "https://myanimelist.net/manga/104/Yotsuba_to",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/57369.jpg?s=5242d1ac0027d4690fd9a8295bc43691",
+      "title": "Yotsuba to!",
+      "type": "Manga",
+      "score": 8.88,
+      "members": 10252,
+      "publishing_start": "Mar 2003",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 31499,
+      "rank": 24,
+      "url": "https://myanimelist.net/manga/31499/Nisekoi",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/181212.jpg?s=d75a9136147d5ff32d0f32972f4aa2ad",
+      "title": "Nisekoi",
+      "type": "Manga",
+      "score": 7.8,
+      "members": 9723,
+      "publishing_start": "Nov 2011",
+      "publishing_end": "Aug 2016",
+      "volumes": 25
+    },
+    {
+      "mal_id": 9711,
+      "rank": 25,
+      "url": "https://myanimelist.net/manga/9711/Bakuman",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/208974.jpg?s=441f299c2effa488c8a08734743e781d",
+      "title": "Bakuman.",
+      "type": "Manga",
+      "score": 8.49,
+      "members": 9310,
+      "publishing_start": "Aug 2008",
+      "publishing_end": "Apr 2012",
+      "volumes": 20
+    },
+    {
+      "mal_id": 42,
+      "rank": 26,
+      "url": "https://myanimelist.net/manga/42/Dragon_Ball",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/54545.jpg?s=b8d72f735687d38c881dc53995bceeaf",
+      "title": "Dragon Ball",
+      "type": "Manga",
+      "score": 8.52,
+      "members": 9253,
+      "publishing_start": "Nov 1984",
+      "publishing_end": "May 1995",
+      "volumes": 42
+    },
+    {
+      "mal_id": 583,
+      "rank": 27,
+      "url": "https://myanimelist.net/manga/583/Claymore",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/5/25982.jpg?s=2130551f73a916450e5cb88171bb99db",
+      "title": "Claymore",
+      "type": "Manga",
+      "score": 8.37,
+      "members": 9235,
+      "publishing_start": "May 2001",
+      "publishing_end": "Oct 2014",
+      "volumes": 27
+    },
+    {
+      "mal_id": 47,
+      "rank": 28,
+      "url": "https://myanimelist.net/manga/47/Katekyo_Hitman_Reborn",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/32291.jpg?s=f5821835a74b80d2edd44be94e8a8de2",
+      "title": "Katekyo Hitman Reborn!",
+      "type": "Manga",
+      "score": 8.23,
+      "members": 9063,
+      "publishing_start": "May 2004",
+      "publishing_end": "Nov 2012",
+      "volumes": 42
+    },
+    {
+      "mal_id": 656,
+      "rank": 29,
+      "url": "https://myanimelist.net/manga/656/Vagabond",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/181787.jpg?s=755eec33953de20b701e30966bacdc59",
+      "title": "Vagabond",
+      "type": "Manga",
+      "score": 8.97,
+      "members": 8841,
+      "publishing_start": "Mar 1999",
+      "publishing_end": "May 2015",
+      "volumes": 37
+    },
+    {
+      "mal_id": 610,
+      "rank": 30,
+      "url": "https://myanimelist.net/manga/610/Skip_Beat",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/26110.jpg?s=18ead68c2e8e1f0ec6d747eda7255edb",
+      "title": "Skip Beat!",
+      "type": "Manga",
+      "score": 8.68,
+      "members": 8761,
+      "publishing_start": "Feb 2002",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 7519,
+      "rank": 31,
+      "url": "https://myanimelist.net/manga/7519/Kami_nomi_zo_Shiru_Sekai",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/188974.jpg?s=7be486fe9d85ff483213b40f52da4bf1",
+      "title": "Kami nomi zo Shiru Sekai",
+      "type": "Manga",
+      "score": 8.55,
+      "members": 8076,
+      "publishing_start": "Apr 2008",
+      "publishing_end": "Apr 2014",
+      "volumes": 26
+    },
+    {
+      "mal_id": 5255,
+      "rank": 32,
+      "url": "https://myanimelist.net/manga/5255/Dengeki_Daisy",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/152369.jpg?s=5f112cbb1a38cd10a25021c9ccc907af",
+      "title": "Dengeki Daisy",
+      "type": "Manga",
+      "score": 8.47,
+      "members": 7939,
+      "publishing_start": "May 2007",
+      "publishing_end": "Dec 2013",
+      "volumes": 16
+    },
+    {
+      "mal_id": 3,
+      "rank": 33,
+      "url": "https://myanimelist.net/manga/3/20th_Century_Boys",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/54437.jpg?s=26af1bac059187fea168c7b52cdfdb27",
+      "title": "20th Century Boys",
+      "type": "Manga",
+      "score": 8.97,
+      "members": 7917,
+      "publishing_start": "Sep 1999",
+      "publishing_end": "Apr 2006",
+      "volumes": 22
+    },
+    {
+      "mal_id": 3986,
+      "rank": 34,
+      "url": "https://myanimelist.net/manga/3986/Deadman_Wonderland",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/186275.jpg?s=ba4e489ee163d9f7afd5918d24467065",
+      "title": "Deadman Wonderland",
+      "type": "Manga",
+      "score": 8.16,
+      "members": 7840,
+      "publishing_start": "Apr 2007",
+      "publishing_end": "Jul 2013",
+      "volumes": 13
+    },
+    {
+      "mal_id": 2921,
+      "rank": 35,
+      "url": "https://myanimelist.net/manga/2921/Kaichou_wa_Maid-sama",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/120073.jpg?s=7ddd3e2806d694cc72a601baeef0288d",
+      "title": "Kaichou wa Maid-sama!",
+      "type": "Manga",
+      "score": 8.46,
+      "members": 7518,
+      "publishing_start": "Dec 2005",
+      "publishing_end": "Sep 2013",
+      "volumes": 18
+    },
+    {
+      "mal_id": 908,
+      "rank": 36,
+      "url": "https://myanimelist.net/manga/908/Soul_Eater",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/159808.jpg?s=2f5baa537466293cfbb5155959ca0dd7",
+      "title": "Soul Eater",
+      "type": "Manga",
+      "score": 8.16,
+      "members": 7492,
+      "publishing_start": "Jun 2003",
+      "publishing_end": "Aug 2013",
+      "volumes": 25
+    },
+    {
+      "mal_id": 24692,
+      "rank": 37,
+      "url": "https://myanimelist.net/manga/24692/Noragami",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/90899.jpg?s=c5e46bbce8e06af2f78c446c358349fe",
+      "title": "Noragami",
+      "type": "Manga",
+      "score": 8.55,
+      "members": 7295,
+      "publishing_start": "Dec 2010",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 25132,
+      "rank": 38,
+      "url": "https://myanimelist.net/manga/25132/Akame_ga_Kill",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/187665.jpg?s=8408d9a1e9cba2a14640401f7c8df54f",
+      "title": "Akame ga Kill!",
+      "type": "Manga",
+      "score": 8.05,
+      "members": 7190,
+      "publishing_start": "Apr 2010",
+      "publishing_end": "Dec 2016",
+      "volumes": 15
+    },
+    {
+      "mal_id": 30,
+      "rank": 39,
+      "url": "https://myanimelist.net/manga/30/Ouran_Koukou_Host_Club",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/5/19240.jpg?s=a266a46be6e01883acbe6f9c679007b4",
+      "title": "Ouran Koukou Host Club",
+      "type": "Manga",
+      "score": 8.59,
+      "members": 7169,
+      "publishing_start": "Jul 2002",
+      "publishing_end": "Sep 2010",
+      "volumes": 18
+    },
+    {
+      "mal_id": 14790,
+      "rank": 40,
+      "url": "https://myanimelist.net/manga/14790/Magi",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/201605.jpg?s=59e8955e207ddc70e704480a9936b3af",
+      "title": "Magi",
+      "type": "Manga",
+      "score": 8.41,
+      "members": 7103,
+      "publishing_start": "Jun 2009",
+      "publishing_end": "Oct 2017",
+      "volumes": 37
+    },
+    {
+      "mal_id": 1706,
+      "rank": 41,
+      "url": "https://myanimelist.net/manga/1706/JoJo_no_Kimyou_na_Bouken_Part_7__Steel_Ball_Run",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/179882.jpg?s=aa3e372a5bc396c24cfe9b191e765fa7",
+      "title": "JoJo no Kimyou na Bouken Part 7: Steel Ball Run",
+      "type": "Manga",
+      "score": 9.15,
+      "members": 6953,
+      "publishing_start": "Jan 2004",
+      "publishing_end": "Apr 2011",
+      "volumes": 24
+    },
+    {
+      "mal_id": 1,
+      "rank": 42,
+      "url": "https://myanimelist.net/manga/1/Monster",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/54525.jpg?s=5b46b6b8d89b7275b033f54aa07d9d0a",
+      "title": "Monster",
+      "type": "Manga",
+      "score": 9.06,
+      "members": 6857,
+      "publishing_start": "Dec 1994",
+      "publishing_end": "Dec 2001",
+      "volumes": 18
+    },
+    {
+      "mal_id": 618,
+      "rank": 43,
+      "url": "https://myanimelist.net/manga/618/Vampire_Knight",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/167748.jpg?s=e88ef7f9bc1bbf3eca515323a6e51890",
+      "title": "Vampire Knight",
+      "type": "Manga",
+      "score": 7.65,
+      "members": 6781,
+      "publishing_start": "Nov 2004",
+      "publishing_end": "May 2013",
+      "volumes": 19
+    },
+    {
+      "mal_id": 8967,
+      "rank": 44,
+      "url": "https://myanimelist.net/manga/8967/Onanie_Master_Kurosawa",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/167595.jpg?s=00d3575e8561c9f1fb6102d775e4bcf7",
+      "title": "Onanie Master Kurosawa",
+      "type": "Manga",
+      "score": 8.53,
+      "members": 6489,
+      "publishing_start": "Sep 2007",
+      "publishing_end": "Mar 2008",
+      "volumes": 0
+    },
+    {
+      "mal_id": 21525,
+      "rank": 45,
+      "url": "https://myanimelist.net/manga/21525/Akatsuki_no_Yona",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/3/153249.jpg?s=c6e42accd311b601bf94cad8153dd15c",
+      "title": "Akatsuki no Yona",
+      "type": "Manga",
+      "score": 8.88,
+      "members": 6366,
+      "publishing_start": "Aug 2009",
+      "publishing_end": null,
+      "volumes": 0
+    },
+    {
+      "mal_id": 336,
+      "rank": 46,
+      "url": "https://myanimelist.net/manga/336/GTO",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/172982.jpg?s=550a7e9f4c352122f14eb1eda73c2b2a",
+      "title": "GTO",
+      "type": "Manga",
+      "score": 8.89,
+      "members": 6275,
+      "publishing_start": "Dec 1996",
+      "publishing_end": "Jan 2002",
+      "volumes": 25
+    },
+    {
+      "mal_id": 28,
+      "rank": 47,
+      "url": "https://myanimelist.net/manga/28/Nana",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/163191.jpg?s=8040b5b0cad195af03fe5abbb8ba1462",
+      "title": "Nana",
+      "type": "Manga",
+      "score": 8.71,
+      "members": 6159,
+      "publishing_start": "May 2000",
+      "publishing_end": "May 2009",
+      "volumes": 21
+    },
+    {
+      "mal_id": 22,
+      "rank": 48,
+      "url": "https://myanimelist.net/manga/22/Rurouni_Kenshin__Meiji_Kenkaku_Romantan",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/127583.jpg?s=89f1e4d25397b23fdddbc89bcc2cdb70",
+      "title": "Rurouni Kenshin: Meiji Kenkaku Romantan",
+      "type": "Manga",
+      "score": 8.69,
+      "members": 6101,
+      "publishing_start": "Apr 1994",
+      "publishing_end": "Sep 1999",
+      "volumes": 28
+    },
+    {
+      "mal_id": 78523,
+      "rank": 49,
+      "url": "https://myanimelist.net/manga/78523/ReLIFE",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/2/171573.jpg?s=27b9e2911ba10fd42964487b24340f7b",
+      "title": "ReLIFE",
+      "type": "Manga",
+      "score": 8.65,
+      "members": 6075,
+      "publishing_start": "Oct 2013",
+      "publishing_end": "Mar 2018",
+      "volumes": 0
+    },
+    {
+      "mal_id": 44,
+      "rank": 50,
+      "url": "https://myanimelist.net/manga/44/Gintama",
+      "image_url":
+        "https://myanimelist.cdn-dena.com/r/100x140/images/manga/1/143121.jpg?s=35f5aa871d933728eaf67758f443c299",
+      "title": "Gintama",
+      "type": "Manga",
+      "score": 8.44,
+      "members": 5933,
+      "publishing_start": "Dec 2003",
+      "publishing_end": null,
+      "volumes": 0
+    }
+  ]
+}

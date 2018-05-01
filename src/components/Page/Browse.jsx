@@ -35,9 +35,6 @@ const Browse = () => (
     <Wrapper>
       <Title title="Browse: Top trending" />
       <Container>
-        {/* <img src={image} alt={`Manga cover of ${canonicalTitle}`} />
-        <h1>{canonicalTitle}</h1>
-        <h2>{synopsis}</h2> */}
         {resultD.map(manga => (
           <MangaCard
             key={manga.id}
