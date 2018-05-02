@@ -18,45 +18,58 @@ const Title = styled.div`
 const Feature = styled.div``;
 const Item = styled.div``;
 
+const API = "https://api.jikan.moe/manga/";
+const renderHTML = (rawHTML: string) =>
+  React.createElement("div", { dangerouslySetInnerHTML: { __html: rawHTML } });
+
 type Props = {
-  manga: {
-    attributes: {
-      synopsis: string,
-      canonicalTitle: string,
-      averageRating: string,
-      ratingRank: number,
-      popularityRank: number,
-      posterImage: {
-        tiny: string,
-        small: string,
-        medium: string,
-        large: string,
-        original: string,
-      },
-    },
+  id: number,
+};
+type State = {
+  data: {
+    image_url: string,
+    title: string,
+    synopsis: string,
+    score: number,
+    popularity: number,
+    rank: number,
   },
 };
+class Details extends React.Component<Props, State> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: {},
+    };
+  }
 
-const Details = (props: Props) => {
-  const mAttr = props.manga.attributes;
-  return (
-    <React.Fragment>
-      <Header />
-      <Container>
-        <Cover src={mAttr.posterImage.original} alt={`Cover for ${mAttr.canonicalTitle}`} />
-        <div>
-          <Title>{mAttr.canonicalTitle}</Title>
+  componentDidMount() {
+    fetch(API + this.props.id)
+      .then(response => response.json())
+      .then(data => this.setState({ data }));
+  }
+
+  render() {
+    const { data } = this.state;
+    return (
+      <React.Fragment>
+        <Header />
+        <Container>
+          <Cover src={data.image_url} alt={`Cover for ${data.title}`} />
           <div>
-            <Feature>Rating: {mAttr.averageRating}%</Feature>
-            <Feature>Ranked #{mAttr.ratingRank}</Feature>
-            <Feature>Popularity Rank: {mAttr.popularityRank}</Feature>
-            <br />
+            <Title>{data.title}</Title>
+            <div>
+              <Feature>Rating: {data.score}</Feature>
+              <Feature>Ranked #{data.rank}</Feature>
+              <Feature>Popularity Rank: {data.popularity}</Feature>
+              <br />
+            </div>
+            <Item>{renderHTML(data.synopsis)}</Item>
           </div>
-          <Item>{mAttr.synopsis}</Item>
-        </div>
-      </Container>
-    </React.Fragment>
-  );
-};
+        </Container>
+      </React.Fragment>
+    );
+  }
+}
 
 export default Details;

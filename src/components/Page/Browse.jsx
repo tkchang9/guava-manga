@@ -8,7 +8,8 @@ import colours from "../../common/colours";
 
 import Title from "./Title";
 import MangaCard from "./MangaCard";
-import preload from "../../../kitsu_trending.json";
+// import preload from "../../../kitsu_trending.json";
+import preload from "../../../jikan_top.json";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -27,7 +28,8 @@ const Wrapper = styled.div`
 
 // array prototype functions
 // let resultD = preload.data.filter(manga => manga.attributes.averageRating > 80);
-const resultD = preload.data;
+// const resultD = preload.data;
+const resultD = preload.top;
 
 const Browse = () => (
   <React.Fragment>
@@ -37,12 +39,11 @@ const Browse = () => (
       <Container>
         {resultD.map(manga => (
           <MangaCard
-            key={manga.id}
-            imageUrl={manga.attributes.posterImage.large}
-            title={manga.attributes.canonicalTitle}
-            ageRatingGuide={manga.attributes.ageRatingGuide}
-            subtype={manga.attributes.subtype}
-            popularityRank={manga.attributes.popularityRank}
+            key={manga.mal_id}
+            imageUrl={manga.image_url.replace("/r/100x140", "")}
+            title={manga.title}
+            popularityRank={manga.rank}
+            score={manga.score}
           />
         ))}
         {/* <pre>

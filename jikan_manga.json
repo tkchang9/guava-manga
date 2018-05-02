@@ -1,0 +1,106 @@
+{
+  "request_hash": "c3c6fd85230f07e612713792592a2fbb6293a714",
+  "request_cached": true,
+  "mal_id": 2,
+  "link_canonical": "https://myanimelist.net/manga/2/Berserk",
+  "title": "Berserk",
+  "title_english": "Berserk",
+  "title_synonyms": "Berserk: The Prototype",
+  "title_japanese": "\u30d9\u30eb\u30bb\u30eb\u30af",
+  "status": "Publishing",
+  "image_url": "https://myanimelist.cdn-dena.com/images/manga/1/157931.jpg",
+  "type": "Manga",
+  "volumes": "Unknown",
+  "chapters": "Unknown",
+  "publishing": true,
+  "published_string": "Aug  25, 1989 to ?",
+  "published": { "from": "1989-08-25", "to": null },
+  "rank": 1,
+  "score": 9.3,
+  "scored_by": 89657,
+  "popularity": 7,
+  "members": 189795,
+  "favorites": 41355,
+  "synopsis":
+    "Guts, a former mercenary now known as the \"Black Swordsman,\" is out for revenge. After a tumultuous childhood, he finally finds someone he respects and believes he can trust, only to have everything fall apart when this person takes away everything important to Guts for the purpose of fulfilling his own desires. Now marked for death, Guts becomes condemned to a fate in which he is relentlessly pursued by demonic beings. Setting out on a dreadful quest riddled with misfortune, Guts, armed with a massive sword and monstrous strength, will let nothing stop him, not even death itself, until he is finally able to take the head of the one who stripped him\u2014and his loved one\u2014of their humanity. [Written by MAL Rewrite] Included one-shot: Volume 14: Berserk: The Prototype",
+  "background":
+    "Berserk won the Award for Excellence at the sixth installment of Tezuka Osamu Cultural Prize in 2002.The series has over 40 million copies in print worldwide and has been published in English by Dark Horse since November 4, 2003. It is also published in Italy, Germany, Spain, France, Brazil, South Korea, Hong Kong, Taiwan, Thailand, Poland, M&eacute;xico and Turkey. ",
+  "related": {
+    "Other": [
+      {
+        "mal_id": 92299,
+        "type": "manga",
+        "url": "https://myanimelist.net/manga/92299/Berserk__Shinen_no_Kami_2",
+        "title": "Berserk: Shinen no Kami 2"
+      },
+      {
+        "mal_id": 101515,
+        "type": "manga",
+        "url": "https://myanimelist.net/manga/101515/Challenging_the_Manga_Dojos",
+        "title": "Challenging the Manga Dojos"
+      },
+      {
+        "mal_id": 106677,
+        "type": "manga",
+        "url": "https://myanimelist.net/manga/106677/Berserk__Honou_Ryuu_no_Kishi",
+        "title": "Berserk: Honou Ryuu no Kishi"
+      }
+    ],
+    "Adaptation": [
+      {
+        "mal_id": 12113,
+        "type": "anime",
+        "url": "https://myanimelist.net/anime/12113/Berserk__Ougon_Jidai-hen_II_-_Doldrey_Kouryaku",
+        "title": "Berserk: Ougon Jidai-hen II - Doldrey Kouryaku"
+      },
+      {
+        "mal_id": 10218,
+        "type": "anime",
+        "url": "https://myanimelist.net/anime/10218/Berserk__Ougon_Jidai-hen_I_-_Haou_no_Tamago",
+        "title": "Berserk: Ougon Jidai-hen I - Haou no Tamago"
+      },
+      {
+        "mal_id": 12115,
+        "type": "anime",
+        "url": "https://myanimelist.net/anime/12115/Berserk__Ougon_Jidai-hen_III_-_Kourin",
+        "title": "Berserk: Ougon Jidai-hen III - Kourin"
+      },
+      {
+        "mal_id": 33,
+        "type": "anime",
+        "url": "https://myanimelist.net/anime/33/Kenpuu_Denki_Berserk",
+        "title": "Kenpuu Denki Berserk"
+      },
+      {
+        "mal_id": 32379,
+        "type": "anime",
+        "url": "https://myanimelist.net/anime/32379/Berserk",
+        "title": "Berserk"
+      },
+      {
+        "mal_id": 34055,
+        "type": "anime",
+        "url": "https://myanimelist.net/anime/34055/Berserk_2nd_Season",
+        "title": "Berserk 2nd Season"
+      }
+    ]
+  },
+  "genre": [
+    { "url": "https://myanimelist.net/manga/genre/1/Action", "name": "Action" },
+    { "url": "https://myanimelist.net/manga/genre/2/Adventure", "name": "Adventure" },
+    { "url": "https://myanimelist.net/manga/genre/6/Demons", "name": "Demons" },
+    { "url": "https://myanimelist.net/manga/genre/8/Drama", "name": "Drama" },
+    { "url": "https://myanimelist.net/manga/genre/10/Fantasy", "name": "Fantasy" },
+    { "url": "https://myanimelist.net/manga/genre/14/Horror", "name": "Horror" },
+    { "url": "https://myanimelist.net/manga/genre/37/Supernatural", "name": "Supernatural" },
+    { "url": "https://myanimelist.net/manga/genre/38/Military", "name": "Military" },
+    { "url": "https://myanimelist.net/manga/genre/40/Psychological", "name": "Psychological" },
+    { "url": "https://myanimelist.net/manga/genre/41/Seinen", "name": "Seinen" }
+  ],
+  "author": [
+    { "url": "https://myanimelist.net/people/1868/Kentarou_Miura", "name": "Miura, Kentarou" }
+  ],
+  "serialization": [
+    { "url": "https://myanimelist.net/manga/magazine/2/Young_Animal", "name": "Young Animal" }
+  ]
+}
