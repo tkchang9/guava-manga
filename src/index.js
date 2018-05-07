@@ -11,7 +11,7 @@ import Browse from "./components/Page/Browse";
 import Details from "./components/Page/Details";
 
 const Missing = () => <h1>404</h1>; // eslint-disable-line react/jsx-filename-extension
-const Error = () => <h1>Error</h1>; // eslint-disable-line react/jsx-filename-extension
+// const Errors = () => <h1>Error</h1>; // eslint-disable-line react/jsx-filename-extension
 
 const App = () => (
   <BrowserRouter>
@@ -23,7 +23,8 @@ const App = () => (
           const selectedManga = preload.top.find(data => props.match.params.id === `${data.mal_id}`);
           if (selectedManga === undefined) {
             return <Missing />;
-          } return <Details id={selectedManga.mal_id} />;
+          }
+          return <Details id={selectedManga.mal_id} />;
         }}
       />
       <Route component={Missing} />
