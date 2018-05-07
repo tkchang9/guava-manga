@@ -36,12 +36,16 @@ type State = {
   },
 };
 class Details extends React.Component<Props, State> {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: {},
-    };
-  }
+  state = {
+    data: {
+      image_url: "",
+      title: "",
+      synopsis: "",
+      score: 0,
+      popularity: 0,
+      rank: 0,
+    },
+  };
 
   componentDidMount() {
     fetch(API + this.props.id)
