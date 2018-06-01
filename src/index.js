@@ -16,7 +16,7 @@ const Missing = () => <h1>404</h1>; // eslint-disable-line react/jsx-filename-ex
 const App = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={Browse} />
+      <Route exact path="/browse/" component={Browse} />
       <Route
         path="/details/:id"
         component={(props: { match: { params: { id: string } } }) => {
