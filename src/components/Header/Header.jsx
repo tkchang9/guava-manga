@@ -1,6 +1,7 @@
 // @flow
 
 import * as React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import colours from "../../common/colours";
@@ -13,19 +14,36 @@ const Container = styled.div`
   position: relative;
   z-index: 99;
   display: flex;
-  padding: 0.5rem;
+  padding: 0.7rem;
   font-family: Ubuntu;
   font-size: 16px;
   color: #666666;
-  border-bottom: 6px solid ${colours.guava};
+  /* border-bottom: 6px solid ${colours.guava}; */
+  box-shadow: 0px 0px 5px black;
   align-items: center;
+  margin-bottom: 30px;
+  background-color: ${colours.blueA};
 `;
-const Item = styled.div`
+const Item = styled(Link)`
+  text-decoration: none;
+  color: white;
   margin-right: 20px;
 `;
 const Image = styled.embed`
   height: 25px;
   margin-right: 5px;
+  pointer-events: none; /*needed to enable links for embed*/
+`;
+const SearchBox = styled.form`
+  margin-left: auto;
+  margin-right: 20px;
+`;
+const Title = styled(Link)`
+  text-decoration: none;
+  color: white;
+  margin-right: 40px;
+  font-size: 1.5rem;
+  text-shadow: -1px 0 brown, 0 1px brown, 1px 0 brown, 0 -1px brown;
 `;
 
 const HUserAuth = (props: { signedIn: boolean, userName: string }) => {
@@ -33,15 +51,17 @@ const HUserAuth = (props: { signedIn: boolean, userName: string }) => {
   if (props.signedIn) {
     checkSignIn = (
       <React.Fragment>
-        <Item>My List</Item>
-        <Item id="hAuth">{props.userName}</Item>
+        <Item to="/browse/">My List</Item>
+        <Item to="/browse/" id="hAuth">
+          {props.userName}
+        </Item>
       </React.Fragment>
     );
   } else {
     checkSignIn = (
       <React.Fragment>
-        <Item>Sign In</Item>
-        <Item>Sign Up</Item>
+        <Item to="/browse/">Sign In</Item>
+        <Item to="/browse/">Sign Up</Item>
       </React.Fragment>
     );
   }
@@ -55,12 +75,18 @@ const HUserAuth = (props: { signedIn: boolean, userName: string }) => {
 
 const Header = () => (
   <Container id="hContainer">
-    <Image src="/img/guava.svg" id="hIcon" />
-    <Item id="hTitle">Guava</Item>
-    <Item id="hBrowse">Browse</Item>
-    <Item id="hSearch">
-      <input placeholder="Search" />
+    <Link to="/browse/">
+      <Image src="/img/guava.svg" id="hIcon" />
+    </Link>
+    <Title to="/browse/" id="hTitle">
+      guava
+    </Title>
+    <Item to="/browse/" id="hBrowse">
+      Browse
     </Item>
+    <SearchBox id="hSearch">
+      <input placeholder="Search" />
+    </SearchBox>
     <HUserAuth signedIn={false} userName="UserName" />
   </Container>
 );

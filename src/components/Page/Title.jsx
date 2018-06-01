@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   font-size: 3rem;
   color: ${colours.blue};
   text-align: center;
-  padding: 30px 20px 40px 20px;
+  padding: 0px 20px 40px 20px;
   margin-left: 5%;
   display: inline-block
   position: relative;

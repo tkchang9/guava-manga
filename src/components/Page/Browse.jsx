@@ -35,11 +35,12 @@ const Browse = () => (
   <React.Fragment>
     <Header />
     <Wrapper>
-      <Title title="Browse: Top trending" />
+      <Title title="Browse: Most Popular" />
       <Container>
         {resultD.map(manga => (
           <MangaCard
             key={manga.mal_id}
+            id={manga.mal_id}
             imageUrl={manga.image_url.replace("/r/100x140", "")}
             title={manga.title}
             popularityRank={manga.rank}

@@ -2,13 +2,14 @@
 
 import * as React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import colours from "../../common/colours";
 
-const Wrapper = styled.div`
+const Wrapper = styled(Link)`
   :hover {
     transition: 0.3s;
-    box-shadow: 1px 1px 100px ${colours.dark};
+    box-shadow: 1px 1px 50px ${colours.dark};
     z-index: 99;
   }
   display: flex;
@@ -17,9 +18,10 @@ const Wrapper = styled.div`
   width: 250px;
   /* height: 420px; */
   box-sizing: border-box;
+  border-radius: 2px;
   box-shadow: 1px 1px 10px #999999;
   background: #fff;
-  /* margin: 10px; */
+  margin: 10px;
   margin-bottom: 10px;
   padding: 10px;
   overflow: hidden;
@@ -68,6 +70,7 @@ const Ranks = styled.div`
 `;
 
 type Props = {
+  id: string,
   title: string,
   imageUrl: string,
   popularityRank: number,
@@ -75,7 +78,9 @@ type Props = {
 };
 
 const MangaCard = (props: Props) => (
-  <Wrapper>
+  // <Link>
+  // </Link>
+  <Wrapper to={`/details/${props.id}`}>
     <Image src={props.imageUrl} />
     <Title>{props.title}</Title>
     <Ranks>
