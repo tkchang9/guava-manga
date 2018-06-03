@@ -3,6 +3,8 @@
 import * as React from "react";
 import styled from "styled-components";
 
+import { Search } from 'styled-icons/fa-solid/Search';
+
 import Header from "../Header/Header";
 import Spinner from "./Spinner";
 

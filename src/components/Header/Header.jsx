@@ -4,10 +4,11 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+import { Search } from "styled-icons/fa-solid/Search";
+
 import colours from "../../common/colours";
 
 import guava from "../../common/img/guava/guava.svg"; // eslint-disable-line
-import search from "../../common/img/searchicon.png"; // eslint-disable-line
 
 // import HUserAuth from './HUserAuth';
 
@@ -41,6 +42,8 @@ const Image = styled.embed`
 `;
 const SearchBox = styled.form`
   input {
+    box-sizing: border-box;
+    height: 30px;
     transition: box-shadow 0.3s;
     font-size: 0.9rem;
     padding: 0.5rem;
@@ -48,12 +51,20 @@ const SearchBox = styled.form`
     border: none;
   }
   button {
-    height: 2rem;
-    width: 2rem;
-    background-image: url("/img/searchicon.png");
-    background-position: 0.5rem 0.5rem;
-    background-size: 2rem 2rem;
-    background-repeat: no-repeat;
+    :hover {
+      background: ${colours.dark};
+    }
+    transition: background 0.35s;
+    color: white;
+    box-sizing: border-box;
+    margin-left: -10px;
+    margin-top: -1px;
+    height: 30px;
+    width: 30px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: ${colours.guava};
+    border: none;
   }
   margin-left: auto;
   margin-right: 20px;
@@ -106,7 +117,9 @@ const Header = () => (
     </Item>
     <SearchBox id="hSearch">
       <input placeholder="Search" />
-      <button type="submit" />
+      <button type="submit">
+        <Search size="16" />
+      </button>
     </SearchBox>
     <HUserAuth signedIn={false} userName="UserName" />
   </Container>
