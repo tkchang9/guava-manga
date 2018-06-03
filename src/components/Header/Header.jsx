@@ -7,6 +7,7 @@ import styled from "styled-components";
 import colours from "../../common/colours";
 
 import guava from "../../common/img/guava/guava.svg"; // eslint-disable-line
+import search from "../../common/img/searchicon.png"; // eslint-disable-line
 
 // import HUserAuth from './HUserAuth';
 
@@ -25,6 +26,10 @@ const Container = styled.div`
   background-color: ${colours.blueA};
 `;
 const Item = styled(Link)`
+  :hover {
+    text-shadow: 0px 1px 5px ${colours.guava};
+  }
+  transition: text-shadow 0.2s;
   text-decoration: none;
   color: white;
   margin-right: 20px;
@@ -35,6 +40,21 @@ const Image = styled.embed`
   pointer-events: none; /*needed to enable links for embed*/
 `;
 const SearchBox = styled.form`
+  input {
+    transition: box-shadow 0.3s;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+  }
+  button {
+    height: 2rem;
+    width: 2rem;
+    background-image: url("/img/searchicon.png");
+    background-position: 0.5rem 0.5rem;
+    background-size: 2rem 2rem;
+    background-repeat: no-repeat;
+  }
   margin-left: auto;
   margin-right: 20px;
 `;
@@ -86,6 +106,7 @@ const Header = () => (
     </Item>
     <SearchBox id="hSearch">
       <input placeholder="Search" />
+      <button type="submit" />
     </SearchBox>
     <HUserAuth signedIn={false} userName="UserName" />
   </Container>
