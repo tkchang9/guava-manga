@@ -52,7 +52,7 @@ const SearchBox = styled.form`
   }
   button {
     :hover {
-      background: ${colours.dark};
+      background: ${colours.guavaA};
     }
     transition: background 0.35s;
     color: white;
@@ -65,6 +65,7 @@ const SearchBox = styled.form`
     border-top-right-radius: 4px;
     background: ${colours.guava};
     border: none;
+    cursor: pointer;
   }
   margin-left: auto;
   margin-right: 20px;
