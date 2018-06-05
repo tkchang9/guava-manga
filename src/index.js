@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 // import preload from "../kitsu_trending.json";
 import preload from "../jikan_top.json";
 
+import Landing from "./components/Page/Landing";
 import Browse from "./components/Page/Browse";
 import Details from "./components/Page/Details";
 
@@ -16,11 +17,14 @@ const Missing = () => <h1>404</h1>; // eslint-disable-line react/jsx-filename-ex
 const App = () => (
   <BrowserRouter>
     <Switch>
+      <Route exact path="/" component={Landing} />
       <Route exact path="/browse/" component={Browse} />
       <Route
         path="/details/:id"
         component={(props: { match: { params: { id: string } } }) => {
-          const selectedManga = preload.top.find(data => props.match.params.id === `${data.mal_id}`);
+          const selectedManga = preload.top.find(
+            data => props.match.params.id === `${data.mal_id}`
+          );
           if (selectedManga === undefined) {
             return <Missing />;
           }
