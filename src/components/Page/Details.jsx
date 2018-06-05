@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 import Header from "../Header/Header";
 import Spinner from "./Spinner";
+import APIError from "./APIError";
 
 import colours from "../../common/colours";
 
@@ -104,6 +105,7 @@ type State = {
     author: [{ url: string, name: string }],
   },
   loaded: boolean,
+  error: boolean,
 };
 class Details extends React.Component<Props, State> {
   state = {
@@ -118,12 +120,23 @@ class Details extends React.Component<Props, State> {
       author: [{ url: "", name: "" }],
     },
     loaded: false,
+    error: false,
   };
 
   componentDidMount() {
     fetch(API + this.props.id)
+      .then((response) => {
+        if (!response.ok) {
+          throw Error(response.statusText);
+        }
+        return response;
+      })
       .then(response => response.json())
-      .then(data => this.setState({ data, loaded: true }));
+      .then(data => this.setState({ data, loaded: true }))
+      .catch((error) => {
+        console.log(`The error is: ${error}`);
+        this.setState({ error: true });
+      });
   }
 
   render() {
@@ -199,6 +212,13 @@ class Details extends React.Component<Props, State> {
               <div>Info not in API</div>
             </div>
           </div>
+        </React.Fragment>
+      );
+    } else if (this.state.error) {
+      return (
+        <React.Fragment>
+          <Header />
+          <APIError />
         </React.Fragment>
       );
     }
